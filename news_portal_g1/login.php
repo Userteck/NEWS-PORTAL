@@ -10,25 +10,57 @@
     <title>Bootstrap demo</title>
     <style>
 
+      .margin_class {
+        padding: 12px;
+        border-radius: 50px;
+        width: 40rem;
+        background-color:#f2f2f2;
+        border-radius: 18px;
+  box-shadow: 3px 3px 18px -6px rgba(0, 0, 0, 0.3);
+      }
 
     </style>
   </head>
   <body>
 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
 
-  
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+        <li class="nav-item">
+        <a href='home.php' class='btn btn-lg btn-primary'> Home </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<div class="container">
+<br>
+<div class="container margin_class">
     <form class="form-signin" method="POST">
         <h2>Login</h2>
 
         
-        <input type="text" name="username" class="form-control" placeholder="Username" required>
-        <input type="password" name="password" class="form-control" placeholder="password" required>
+        <input type="text" name="username" class="form-control" placeholder="Username" required><br>
+        <input type="password" name="password" class="form-control" placeholder="password" required><br>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-        <a href="index.php" class="btn btn-lg btn-primary btn-block">Registration</a>
+        <a href="index.php" class="btn btn-lg btn-primary btn-block">Registration</a><br><br>
     </from>
-</div>
+</div><br>
 
 
 <?php
@@ -52,11 +84,11 @@ require('connect.php');
 
   if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
-    echo "Hello " . $username . "! ";
+    echo "<center>Hello " . $username . "! ";
     echo "You entered"; 
-    echo "<a href='logout.php' class='btn btn-lg btn-primary'> Logout </a><br><br>"; 
+    echo "<center><a href='logout.php' class='btn btn-lg btn-danger'> Logout </a><br><br>"; 
     echo "Visit homepage";
-    echo "<a href='home.php' class='btn btn-lg btn-primary'> Home </a>";
+    echo "<center><a href='home.php' class='btn btn-lg btn-primary'> Home </a></center>";
   }
 
  ?>
