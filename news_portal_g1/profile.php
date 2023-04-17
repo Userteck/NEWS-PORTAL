@@ -109,9 +109,13 @@ a{
                 </div>
                 
                 <div class="text-center mt-3">
-                    <span class="bg-secondary p-1 px-4 rounded text-white">Pro</span>
+                    <span class="bg-secondary p-1 px-4 rounded text-white">
+                        
+Admin
+
+                    </span>
                     <h5 class="mt-2 mb-0"><?php echo $_SESSION['username']; ?>  </h5>
-                    <span>UI/UX Designer</span>
+                    <span>  </span>
                     
                     <div class="px-4 mt-1">
                     
@@ -134,18 +138,18 @@ a{
 
                         <div class="float-container"><br>
 
-  <div class="float-child">
-    <div class="green">
-        <a href="admin_user.php"><button class="btn btn-outline-primary px-4">&nbspUser update&nbsp</button></a></div>
-  </div><br>
-  
-  <div class="float-child">
-    <div class="blue">
-    <a href="admin_news.php"><button class="btn btn-outline-primary px-4">News update</button></a>
-    </div>
-  </div>
-  
-</div>
+                        <div class="float-child">
+                            <div class="green">
+                                <a href="admin_user.php"><button class="btn btn-outline-primary px-4">&nbspUser update&nbsp</button></a></div>
+                        </div><br>
+                        
+                        <div class="float-child">
+                            <div class="blue">
+                            <a href="admin_news.php"><button class="btn btn-outline-primary px-4">News update</button></a>
+                            </div>
+                        </div>
+                        
+                        </div>
 
                     </div>      
                 </div>                         
