@@ -117,7 +117,7 @@
             <a class="nav-link active" aria-current="page" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Feed</a>
+            <a class="nav-link" href="feed_(test).php">Feed</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">News</a>
@@ -128,10 +128,10 @@
             Write
             </a>   
             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Write article</a></li>
+            <li><a class="dropdown-item" href="#">Review article</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Moderate articles</a></li>
             </ul>
         </li>
 
