@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 19, 2023 at 09:33 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.0.25
+-- Хост: 127.0.0.1
+-- Время создания: Май 05 2023 г., 19:19
+-- Версия сервера: 10.4.27-MariaDB
+-- Версия PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `news_portal`
+-- База данных: `news_portal`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `article`
+-- Структура таблицы `article`
 --
 
 CREATE TABLE `article` (
@@ -38,7 +38,7 @@ CREATE TABLE `article` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news`
+-- Структура таблицы `news`
 --
 
 CREATE TABLE `news` (
@@ -50,17 +50,29 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='news';
 
 --
--- Dumping data for table `news`
+-- Дамп данных таблицы `news`
 --
 
 INSERT INTO `news` (`n_id`, `n_title`, `n_category`, `n_content`, `n_img`) VALUES
-(1, '‘I just can’t block this out’ Punk singer ‘Chacha’ Ivanov spoke out in support of the Moskalev family at a recent concert', 'Political', 'The case of 13-year-old Masha Moskaleva, who drew an anti-war picture in school art class in April 2022, has captivated certain segments of the Russian population. The drawing set off a cascade of legal problems for Moskaleva and her single father, Alexey Moskalev, who was sentenced, on April 5, to two years in prison for his own posts on social media. At a concert in Moscow on April 15, Alexander “Chacha” Ivanov, frontman for the punk band Naive, wore a T-shirt emblazoned with Masha Moskaleva’s name and spoke to the audience about her case.\r\n\r\nAlexander “Chacha” Ivanov, the singer for the Russian punk band Naive, wore a T-shirt emblazoned with the words Masha Moskaleva on stage at an April 15 concert. He also spoke to the audience about the persecution of the Moskalev family, writes Mediazona.\r\n\r\n“Friends, I’m taking this opportunity. I can’t pass it up, I’ve tried to block out this affair, but I don’t know, I can’t do it, I don’t understand why, it worked for some reason with everything else. This thing with Masha Moskaleva somehow just won’t leave me alone. Maybe it’s because my own daughter is about the same age — she’s 14, and Masha is 13. Friends, I want to ask you to google this case, find out what happened, be horrified about what happened to Masha and her family because of a drawing she did during art class,” said the musician.\r\n\r\nThe audience reacted to Ivanov’s words with applause and started chanting “Fuck the war!”', 'pictures/gallery.png'),
-(2, 'De Facto: Latvian manufacturer on US watch list may be linked to Russia', 'Local', 'The Latvian manufacturer of high-quality navigation equipment Fiber Optical Solution, included in the so-called US export control list last December, has historical ties to two Russian companies. The United States said that the Latvian manufacturer helped the Russian military industry. The Ministry of Foreign Affairs of Latvia has no information that would confirm this. The company itself contested the inclusion in the list, according to the portal rus.lsm.lv with reference to the De facto program of Latvian television.', 'pictures/tree.webp');
+(1, 'Belarus has introduced temporary border controls on the border with Russia. Passports are checked for travelers', 'Political', 'At the entrance to Belarus from Russia, temporary border control has been introduced, and passports are checked for those entering. This is reported by the publication \"Zerkalo\" with reference to the State Border Committee.\n\nOne of the readers told the publication that on the evening of May 4, a border checkpoint was installed near the border on the M-1 highway, which is a “pair of trailers for border guards”, four barriers and a barrage tape with spikes.\n\nThe journalist of the publication called the State Border Committee of Belarus, where they confirmed that such control would be temporarily introduced at all main entrances from Russia. According to the representative of the department, the checks will be conducted \"until further notice.\"\n\nZerkalo also reports that queues have already appeared at the border due to passport control. The MotolkoPomogi telegram channel, citing border crossing chats, writes about a long queue on the M-1 highway. According to users, “everyone is driven out of cars, searched, documents are written down.”\n\nThe Telegram channel “Rumors of Vitebsk” writes about the appearance of a checkpoint on the highway between Liozno and Rudnya, a line has lined up for it for several kilometers. Russians are especially carefully checked, the report says.\n\nWhat is the reason for the strengthening of passport control at the border is unknown.\n\nThere is no full passport control on the border between Russia and Belarus. Border guards can selectively stop cars and ask for the necessary documents.At the entrance to Belarus from Russia, temporary border control has been introduced, and passports are checked for those entering. This is reported by the publication \"Zerkalo\" with reference to the State Border Committee.\n\nOne of the readers told the publication that on the evening of May 4, a border checkpoint was installed near the border on the M-1 highway, which is a “pair of trailers for border guards”, four barriers and a barrage tape with spikes.\n\nThe journalist of the publication called the State Border Committee of Belarus, where they confirmed that such control would be temporarily introduced at all main entrances from Russia. According to the representative of the department, the checks will be conducted \"until further notice.\"\n\nZerkalo also reports that queues have already appeared at the border due to passport control. The MotolkoPomogi telegram channel, citing border crossing chats, writes about a long queue on the M-1 highway. According to users, “everyone is driven out of cars, searched, documents are written down.”\n\nThe Telegram channel “Rumors of Vitebsk” writes about the appearance of a checkpoint on the highway between Liozno and Rudnya, a line has lined up for it for several kilometers. Russians are especially carefully checked, the report says.\n\nWhat is the reason for the strengthening of passport control at the border is unknown.\n\nThere is no full passport control on the border between Russia and Belarus. Border guards can selectively stop cars and ask for the necessary documents.', 'pictures/gallery.png'),
+(2, 'De Facto: Latvian manufacturer on US watch list may be linked to Russia', 'Local', 'The Latvian manufacturer of high-quality navigation equipment Fiber Optical Solution, included in the so-called US export control list last December, has historical ties to two Russian companies. The United States said that the Latvian manufacturer helped the Russian military industry. The Ministry of Foreign Affairs of Latvia has no information that would confirm this. The company itself contested the inclusion in the list, according to the portal rus.lsm.lv with reference to the De facto program of Latvian television.', 'pictures/news1.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Структура таблицы `signup`
+--
+
+CREATE TABLE `signup` (
+  `user_id` int(11) NOT NULL,
+  `username` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `password` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
 --
 
 CREATE TABLE `users` (
@@ -72,7 +84,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Дамп данных таблицы `users`
 --
 
 INSERT INTO `users` (`users_id`, `username`, `email`, `password`, `active`) VALUES
@@ -85,49 +97,61 @@ INSERT INTO `users` (`users_id`, `username`, `email`, `password`, `active`) VALU
 (24, 'dsaadsda', 'test', 'test', 0);
 
 --
--- Indexes for dumped tables
+-- Индексы сохранённых таблиц
 --
 
 --
--- Indexes for table `article`
+-- Индексы таблицы `article`
 --
 ALTER TABLE `article`
   ADD PRIMARY KEY (`r_id`);
 
 --
--- Indexes for table `news`
+-- Индексы таблицы `news`
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`n_id`);
 
 --
--- Indexes for table `users`
+-- Индексы таблицы `signup`
+--
+ALTER TABLE `signup`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- Индексы таблицы `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`users_id`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT for table `article`
+-- AUTO_INCREMENT для таблицы `article`
 --
 ALTER TABLE `article`
   MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `news`
+-- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
   MODIFY `n_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT для таблицы `signup`
+--
+ALTER TABLE `signup`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
