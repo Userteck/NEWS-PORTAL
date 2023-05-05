@@ -128,10 +128,10 @@
             Write
             </a>   
             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Write article</a></li>
-            <li><a class="dropdown-item" href="#">Review article</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Moderate articles</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </li>
 
