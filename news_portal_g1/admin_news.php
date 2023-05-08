@@ -137,7 +137,7 @@
 
 
             <div class="container-fluid">
-            <a href="#"><img class="navbar-brand" src="/news_portal_g1/img/ap-logo.png" width="100px" alt=""></a>
+            <a href="home.php"><img class="navbar-brand" src="/news_portal_g1/img/ap-logo.png" width="100px" alt=""></a>
                 <a class="navbar-brand g-lg-0ž" href="#">           </a>
                 <form class="d-flex" role="search">
                 <input class="form-control-header me-2" type="search" placeholder="   Search" aria-label="Search">
@@ -224,7 +224,7 @@
             <td>' .$news[3]  . '</td>
             <td>' .$news[4]  . '</td>
 
-            <td><a class="btn btn-light" href="update_user.php?k_id='.$news[0] .'">Update</a> </td>
+            <td><a class="btn btn-light" href="update_news.php?k_id='.$news[0] .'">Update</a> </td>
         </tr>
         ';
         }

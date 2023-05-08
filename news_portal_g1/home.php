@@ -201,15 +201,47 @@ button[type=submitt] {
   font-size: 16px;
 }
 
+.album-try{
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  text-decoration: none;
+
+
+  background-color: #fff;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+.color-main{
+  background-color: #18191f;
+}
+.no-decoration{
+  text-decoration: none;
+  color: #3e435c;
+}
 
     </style>
   </head>
   <body>
 
 
-              <div class="container text-center collum-main">
+              <div class="container  collum-main color-main">
+
+
                 <div class="row align-items-start">
                   <div class="col">
+
+
+                <div class="album-try">
+                <h5><a href="about_us.php" class="no-decoration">About "NewsPortal"</a></h5>
+                </div>
+
+                    
                     <div class="div1">
                         <div class="container text-center">
                             <div class="row align-items-start">
@@ -225,7 +257,10 @@ button[type=submitt] {
       </button>
     </div>
   </div>
+
 </header>
+
+
 
 <main>
 
@@ -258,7 +293,7 @@ button[type=submitt] {
                   <label for="image">Add Image:</label><br><br>
                   <input type="file" name="image">&nbsp&nbsp&nbsp
 
-                  <br><br><button type="submitt">Submit</button><br><br>
+                  <br><br><button type="submit">Submit</button><br><br>
               </form>
           </div>
         </div>
@@ -276,6 +311,7 @@ button[type=submitt] {
 
     
   </section>
+
 
 
   
@@ -315,7 +351,7 @@ button[type=submitt] {
                       </div>
 
                 </div>
-                <small class="text-body-secondary">1 min</small>
+                <small class="text-body-secondary">2 min</small>
               </div>
             </div>
           </div>
@@ -392,7 +428,7 @@ button[type=submitt] {
                       </div>
 
                 </div>
-                <small class="text-body-secondary">1 min</small>
+                <small class="text-body-secondary">2 min</small>
               </div>
             </div>
           </div>

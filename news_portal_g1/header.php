@@ -100,7 +100,7 @@
 
 
     <div class="container-fluid">
-    <a href="#"><img class="navbar-brand" src="/news_portal_g1/pictures/ap-logo.png" width="100px" alt=""></a>
+    <a href="home.php"><img class="navbar-brand" src="/news_portal_g1/pictures/ap-logo.png" width="100px" alt=""></a>
         <a class="navbar-brand g-lg-0ž" href="#">           </a>
         <form class="d-flex" role="search">
         <input class="form-control-header me-2" type="search" placeholder="   Search" aria-label="Search">

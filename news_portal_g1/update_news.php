@@ -30,26 +30,26 @@ $user=mysqli_fetch_assoc($user);
         }
         input {
   width: 70%;
-  height: 30%;
+  height: 40px;
 }
     </style>
 </head>
 <body>
     <center>
-    <div class="form_update_user">
-<form action="update_func.php" method="post" enctype="multipart/form-data">
-    <input type="hidden" name="id" value="<?=$user['users_id'] ?>">
-    <p>username</p>
-    <input type="text" name="name" value="<?=$user['username'] ?>"><br><br>
-    <p>email</p>
-    <input type="email" name="email" value="<?=$user['email'] ?>"><br><br>
-    <p>password</p>
-    <input type="text" name="password" value="<?=$user['password'] ?>"><br><br>
-    <p>active</p>
-    <input type="text" name="phone" value="<?=$user['active'] ?>"><br><br>
+    <div class="form_update_news">
+<form action="update_func_news.php" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="<?=$user['n_id'] ?>">
+    <p>title</p>
+    <input type="text" name="title" value="<?=$user['title'] ?>"><br><br>
+    <p>category</p>
+    <input type="email" name="category" value="<?=$user['category'] ?>"><br><br>
+    <p>content</p>
+    <input type="text" name="content" value="<?=$user['content'] ?>"><br><br>
+    <p>image</p>
+    <input type="text" name="img" value="<?=$user['img'] ?>"><br><br>
 
     <button type="submit" class="btn btn-primary">Update</button><br><br>
-    <a href="admin_user.php" class="btn btn-secondary">&nbsp&nbspBack&nbsp&nbsp</a>
+    <a href="admin_news.php" class="btn btn-secondary">&nbsp&nbspBack&nbsp&nbsp</a>
     </div>
     </center>
 </form>

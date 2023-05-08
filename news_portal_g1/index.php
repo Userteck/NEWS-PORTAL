@@ -25,23 +25,40 @@ include_once "header.php";
   <?php
   require('connect.php');
   
-  if (isset($_POST['username']) && isset($_POST['password'])){
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+  // Password validation function
+  function validate_password($password) {
+    // Define the password pattern (at least 8 characters, at least 1 uppercase, 1 lowercase, and 1 number)
+    $pattern = '/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/';
+    return preg_match($pattern, $password);
+  }
 
-    $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email','$password')";
-    $result = mysqli_query($connection, $query);
 
-    if($result){
-      $smsg = "Registration completed";
-    } else {
-      $fsmsg = "Error";
+  if (isset($_POST['username']) && isset($_POST['password']))
+  {
+      $username = $_POST['username'];
+      $email = $_POST['email'];
+      $password = $_POST['password'];
+
+      if (!validate_password($password)) {
+        $fsmsg = "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number";
+      } else {
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT); // Hash the password
+        
+      $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email','$password')";
+      $result = mysqli_query($connection, $query);
+
+      
+      if($result){
+        $smsg = "Registration completed";
+      } else {
+        $fsmsg = "Error";
+      }
     }
   }
-  
 
-  ?>
+   ?>
+
+
 <br>
 
 <div class="container margin_class">
