@@ -281,17 +281,17 @@ button[type=submitt] {
                   <h1>Write news post</h1>
 
               <form action="add_post.php" method="post" enctype="multipart/form-data">
-                  <label for="title">Title:</label><br><br>
-                  <input type="text" name="title">
+                  <label for="n_title">Title:</label><br><br>
+                  <input type="text" name="n_title">
                   <br>
                   <label for="category">Category:</label><br><br>
-                  <input type="text" name="category">
+                  <input type="text" name="n_category">
 
                   <label for="content">Content:</label><br><br>
-                  <input type="text" name="content">
+                  <input type="text" name="n_content">
 
-                  <label for="image">Add Image:</label><br><br>
-                  <input type="file" name="image">&nbsp&nbsp&nbsp
+                  <label for="n_img">Add Image:</label><br><br>
+                  <input type="file" name="n_img">&nbsp&nbsp&nbsp
 
                   <br><br><button type="submit">Submit</button><br><br>
               </form>

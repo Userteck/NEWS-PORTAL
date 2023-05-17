@@ -125,7 +125,7 @@
 
 .float-child {
     width: 50%;
-    float: left;
+    float: center;
     padding: 20px;
     border: 1px solid;
 } 
@@ -200,6 +200,33 @@
     
     <div class="float-container">
 
+    <div class="float-child">
+
+  <h1>Add</h1>
+        <form action="add_news.php" method="post" enctype="multipart/form-data">
+            <p><b>Title</b></p>
+            <input type="text" name="title">
+            <p><b>Category</b></p>
+            <input type="text" name="category">
+            <p><b>Content</b></p>
+            <input type="text" name="content"><br><br>
+            <p><b>img</b></p>
+            <input type="file" name="img">
+   
+
+<BR><BR><button type="submit" class="btn btn-secondary">Add</button>
+
+        </form><br>
+        <h1>Delete</h1>
+        <form action="delete_news.php" method="post" enctype="multipart/form-data">
+            <p><b>n_id (news ID)</b></p>
+            <input type="text" name="n_id">&nbsp&nbsp&nbsp
+
+            <button type="submit" class="btn btn-danger">Delete </button><br><br><br>
+        </form>
+
+  </div>
+
 <div class="float-child">
 
   <table>
@@ -235,32 +262,6 @@
 
 
 
-<div class="float-child">
-
-  <h1>Add</h1>
-        <form action="add_news.php" method="post" enctype="multipart/form-data">
-            <p><b>Title</b></p>
-            <input type="text" name="title">
-            <p><b>Category</b></p>
-            <input type="text" name="category">
-            <p><b>Content</b></p>
-            <input type="text" name="content"><br><br>
-            <p><b>img</b></p>
-            <input type="file" name="img">
-   
-
-<BR><BR><button type="submit" class="btn btn-secondary">Add</button>
-
-        </form><br>
-        <h1>Delete</h1>
-        <form action="delete_user.php" method="post" enctype="multipart/form-data">
-            <p><b>n_id (news ID)</b></p>
-            <input type="text" name="id">&nbsp&nbsp&nbsp
-
-            <button type="submit" class="btn btn-danger">Delete </button><br><br><br>
-        </form>
-
-  </div>
 </div>
 
 
